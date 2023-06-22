@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech2etc Ecommerce Tutorial</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section id="header">
+    <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a class="active" href="account.html">Account</a></li>
+        <li><a href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section id="page-headerr">
+    <div class="from-box">
+      <h1>Sign Up</h1>
+      <form id="signupForm" onsubmit="return validateForm()">
+        <div class="input-group">
+          <div class="input-faild" id="">
+            <i class='fa fa-user-o'></i>
+            <input id="nameInput" type="text" placeholder="Name">
+          </div>
+          <div class="input-faild">
+            <i class='fa fa-envelope'></i>
+            <input id="emailInput" type="email" placeholder="Email">
+          </div>
+          <div class="input-faild">
+            <i class='fa fa-lock'></i>
+            <input id="passwordInput" type="password" placeholder="Password">
+          </div>
+        </div>
+        <p>Lost password <a href="#">Click Here!</a></p>
+        <div class="btn-field">
+          <button type="submit" id="signupBtn">Sign up</button>
+          <button type="button" id="signinBtn" class="disable">Sign in</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Sign Up For Newsletters</h4>
+      <p>Get E-mail updates about our latest shop and <span>special offers.</span>
+      </p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Your email address">
+      <button class="normal">Sign Up</button>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <!-- Footer content -->
+  </footer>
+
+  <script>
+    function validateForm() {
+      var nameInput = document.getElementById("nameInput").value;
+      var emailInput = document.getElementById("emailInput").value;
+      var passwordInput = document.getElementById("passwordInput").value;
+
+      if (nameInput === "" || emailInput === "" || passwordInput === "") {
+        alert("Please fill in all the fields.");
+        return false;
+      } else {
+        // Redirect to index.html
+        window.location.href = "index.html";
+        return true;
+      }
+    }
+  </script>
+   <footer class="section-p1">
+    <div class="col">
+        <img src="img/logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Phone:</strong> +216 23 153 541</p>
+        <p><strong>Hours:</strong> 10:00 - 18:00, Mon - sat</p>
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-ftwitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact US</a>
+    </div>
+
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="img/pay/app.jpg" alt="">
+            <img src="img/pay/play.jpg" alt="">
+        </div>
+        <p>Secured Payement Gateways</p>
+        <img src="img/pay/pay.png" alt="">
+    </div>
+
+    <div class="copyright">
+        <p>0 2023, Tech2 etc - HTML CSS Ecommerce Template</p>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
